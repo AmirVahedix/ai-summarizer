@@ -1,5 +1,6 @@
 import Form from "./Form";
 import History from "./History";
+import Result from "./Result";
 
 const Demo = () => {
   return (
@@ -7,6 +8,7 @@ const Demo = () => {
       <div className="flex flex-col w-full gap-2">
         <Form />
         <History />
+        <Result />
       </div>
     </section>
   );
