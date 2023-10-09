@@ -1,11 +1,11 @@
-import { useIsFetching } from "@tanstack/react-query";
+import { useIsMutating } from "@tanstack/react-query";
 
 import LoadingSpinner from "./LoadingSpinner";
 
 const Result = () => {
-  const isFetching = useIsFetching();
+  const isMutating = useIsMutating();
 
-  if (isFetching) return <LoadingSpinner />;
+  if (isMutating) return <LoadingSpinner />;
 
   return (
     <div className="my-10 max-w-full flex justify-center items-center">
