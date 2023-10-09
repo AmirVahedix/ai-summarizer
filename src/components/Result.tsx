@@ -1,4 +1,12 @@
+import { useIsFetching } from "@tanstack/react-query";
+
+import LoadingSpinner from "./LoadingSpinner";
+
 const Result = () => {
+  const isFetching = useIsFetching();
+
+  if (isFetching) return <LoadingSpinner />;
+
   return (
     <div className="my-10 max-w-full flex justify-center items-center">
       <div className="flex flex-col gap-3">
